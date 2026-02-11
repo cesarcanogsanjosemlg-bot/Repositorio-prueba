@@ -14,7 +14,7 @@ public class Main {
 			@Override
 			public void run() {
 				Vista v = new Vista();
-				Controlador c = new Controlador(v);
+				Controlador c = new Controlador();
 				v.setVisible(true);
 			}
 		});

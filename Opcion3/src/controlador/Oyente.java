@@ -1,8 +1,9 @@
 package controlador;
 
+import java.awt.event.*;
 import vista.Vista;
 
-public class Oyente {
+public class Oyente implements ActionListener {
 
   botonCrear.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent ae) {

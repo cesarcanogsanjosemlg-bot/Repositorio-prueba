@@ -1,6 +1,9 @@
 package vista;
 
-public class Vista {
+import javax.swing.*;
+import java.awt.*;
+
+public class Vista extends JFrame {
   private JButton botonCrear;
 	
 	public Vista() {
@@ -20,4 +23,5 @@ public class Vista {
 	
 	//Getters
 	public JButton getBtnCrear() { return botonCrear; }
+		
 }
