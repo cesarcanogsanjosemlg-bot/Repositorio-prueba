@@ -1,6 +1,9 @@
 package controlador;
 
 public class Controlador {
-  aioasdfioqbwfi
+
+  public Controlador() {
+    
+  }
 
 }
