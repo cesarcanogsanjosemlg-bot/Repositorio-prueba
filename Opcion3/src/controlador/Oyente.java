@@ -1,8 +1,9 @@
 package controlador;
 
+import vista.Vista;
+
 public class Oyente {
 
-  JButton botonCrear = new JButton("Crear");
   botonCrear.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent ae) {
         botonCrear.setEnabled(false);
