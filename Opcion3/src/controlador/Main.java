@@ -6,14 +6,14 @@ package controlador;
  */
 import javax.swing.SwingUtilities;
 
-import vista.Vista;
+import vista.Ventana;
 
 public class Main {
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				Vista v = new Vista();
+				Ventana v = new Ventana();
 				Controlador c = new Controlador();
 				v.setVisible(true);
 			}
