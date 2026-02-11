@@ -1,3 +1,8 @@
+/**
+ * @authors César Cano González / Ricardo Ebhotemen Vázquez
+ * @fecha 11/02/2026
+ * @version 1.0.0
+ */
 package modelo;
 
 public class Datos {
