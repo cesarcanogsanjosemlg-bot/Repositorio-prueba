@@ -2,10 +2,12 @@ package modelo;
 
 public class Datos {
 
+	// Window dimensions
     public int anchoVentana = 400;
 	public int altoVentana = 200;
     public int anchoCaja = 20;
-	
+
+	// Text
     public String textoBotonCrear = "Crear caja";
     public String textoBotonOcultar = "Ocultar Contenido";
     public String textoBotonMostrar = "Mostrar Contenido";
