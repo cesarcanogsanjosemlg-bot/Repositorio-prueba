@@ -4,9 +4,9 @@ package controlador;
  * @fecha 11/02/2026
  * @version 1.0.0
  */
-
 import javax.swing.SwingUtilities;
 import vista.Ventana;
+
 
 public class Main {
 	
