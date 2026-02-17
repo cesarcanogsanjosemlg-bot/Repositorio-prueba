@@ -77,13 +77,50 @@ public class Main extends JFrame {
     }
 
     private void inicializarDatosCP() {
-        // REQUISITO[cite: 11]: Modelo de datos interno
         baseDeDatosCP = new HashMap<>();
-        // Formato: CP -> Localidad, Provincia, Comunidad, País
-        baseDeDatosCP.put("29001", new DatosDireccion("Málaga", "Málaga", "Andalucía", "España"));
-        baseDeDatosCP.put("28001", new DatosDireccion("Madrid Centro", "Madrid", "Madrid", "España"));
-        baseDeDatosCP.put("08001", new DatosDireccion("Barcelona Raval", "Barcelona", "Cataluña", "España"));
-        baseDeDatosCP.put("41001", new DatosDireccion("Sevilla Centro", "Sevilla", "Andalucía", "España"));
+
+        // --- ANDALUCÍA ---
+        baseDeDatosCP.put("29001", new DatosDireccion("Málaga - Centro", "Málaga", "Andalucía", "España"));
+        baseDeDatosCP.put("29601", new DatosDireccion("Marbella", "Málaga", "Andalucía", "España"));
+        baseDeDatosCP.put("41001", new DatosDireccion("Sevilla - Museo", "Sevilla", "Andalucía", "España"));
+        baseDeDatosCP.put("11001", new DatosDireccion("Cádiz - Centro", "Cádiz", "Andalucía", "España"));
+        baseDeDatosCP.put("18001", new DatosDireccion("Granada - Centro", "Granada", "Andalucía", "España"));
+
+        // --- MADRID ---
+        baseDeDatosCP.put("28001", new DatosDireccion("Madrid - Salamanca", "Madrid", "Madrid", "España"));
+        baseDeDatosCP.put("28013", new DatosDireccion("Madrid - Gran Vía", "Madrid", "Madrid", "España"));
+        baseDeDatosCP.put("28901", new DatosDireccion("Getafe", "Madrid", "Madrid", "España"));
+
+        // --- CATALUÑA ---
+        baseDeDatosCP.put("08001", new DatosDireccion("Barcelona - El Raval", "Barcelona", "Cataluña", "España"));
+        baseDeDatosCP.put("08007", new DatosDireccion("Barcelona - Eixample", "Barcelona", "Cataluña", "España"));
+        baseDeDatosCP.put("43001", new DatosDireccion("Tarragona - Centro", "Tarragona", "Cataluña", "España"));
+
+        // --- COMUNIDAD VALENCIANA ---
+        baseDeDatosCP.put("46001", new DatosDireccion("Valencia - Ciutat Vella", "Valencia", "C. Valenciana", "España"));
+        baseDeDatosCP.put("03001", new DatosDireccion("Alicante - Centro", "Alicante", "C. Valenciana", "España"));
+        baseDeDatosCP.put("12001", new DatosDireccion("Castellón de la Plana", "Castellón", "C. Valenciana", "España"));
+
+        // --- PAÍS VASCO ---
+        baseDeDatosCP.put("48001", new DatosDireccion("Bilbao - Casco Viejo", "Vizcaya", "País Vasco", "España"));
+        baseDeDatosCP.put("20001", new DatosDireccion("San Sebastián", "Guipúzcoa", "País Vasco", "España"));
+        baseDeDatosCP.put("01001", new DatosDireccion("Vitoria-Gasteiz", "Álava", "País Vasco", "España"));
+
+        // --- GALICIA ---
+        baseDeDatosCP.put("15001", new DatosDireccion("A Coruña - Ciudad Vieja", "A Coruña", "Galicia", "España"));
+        baseDeDatosCP.put("36201", new DatosDireccion("Vigo", "Pontevedra", "Galicia", "España"));
+        baseDeDatosCP.put("15701", new DatosDireccion("Santiago de Compostela", "A Coruña", "Galicia", "España"));
+
+        // --- OTRAS REGIONES ---
+        baseDeDatosCP.put("50001", new DatosDireccion("Zaragoza - Casco Antiguo", "Zaragoza", "Aragón", "España")); // Aragón
+        baseDeDatosCP.put("33001", new DatosDireccion("Oviedo", "Asturias", "Asturias", "España")); // Asturias
+        baseDeDatosCP.put("39001", new DatosDireccion("Santander", "Cantabria", "Cantabria", "España")); // Cantabria
+        baseDeDatosCP.put("45001", new DatosDireccion("Toledo", "Toledo", "Castilla-La Mancha", "España")); // Castilla-La Mancha
+        baseDeDatosCP.put("47001", new DatosDireccion("Valladolid", "Valladolid", "Castilla y León", "España")); // Castilla y León
+        baseDeDatosCP.put("30001", new DatosDireccion("Murcia", "Murcia", "Murcia", "España")); // Murcia
+        baseDeDatosCP.put("07001", new DatosDireccion("Palma de Mallorca", "Islas Baleares", "Baleares", "España")); // Baleares
+        baseDeDatosCP.put("35001", new DatosDireccion("Las Palmas de G.C.", "Las Palmas", "Canarias", "España")); // Canarias
+        baseDeDatosCP.put("38001", new DatosDireccion("Santa Cruz de Tenerife", "S.C. Tenerife", "Canarias", "España")); // Canarias
     }
 
     private void buscarCodigoPostal() {
