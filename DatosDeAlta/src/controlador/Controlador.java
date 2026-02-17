@@ -1,20 +1,25 @@
 package controlador;
+
 import modelo.Modelo;
 import vista.Vista;
 
 public class Controlador {
-    private Vista v;
-    private Modelo m;
-    private Oyente o;
+
+    private Vista vista;
+    private Modelo modelo;
+    private Oyente oyente;
 
     public Controlador() {
-        this.v = new Vista();
-        this.m = new Modelo();
-        this.o = new Oyente(v, m);
+        // Inicializamos componentes con nombres claros
+        this.vista = new Vista();
+        this.modelo = new Modelo();
+        this.oyente = new Oyente(vista, modelo);
         
-        v.getBtn().addActionListener(o);
-        v.getCP().addFocusListener(o);
+        // Asignamos los listeners a los componentes de la vista
+        vista.getBotonValidar().addActionListener(oyente);
+        vista.getCampoCodigoPostal().addFocusListener(oyente);
         
-        v.setVisible(true);
+        // Mostramos la ventana
+        vista.setVisible(true);
     }
 }
